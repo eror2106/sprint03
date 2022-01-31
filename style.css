@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 5px dotted black;
+}
+header {
+  background-color: rgb(233, 203, 35);
+  padding: 0.5%;
+}
+h2 {
+  background-color: lightblue;
+  padding: 0.3%;
+}
+#flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bleu {
+  background-color: blue;
+}
+
+table {
+  margin-right: 50%;
+}
+th {
+  border: 1px solid black;
+}
