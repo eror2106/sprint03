@@ -29,4 +29,6 @@ function ajouterLigne() {
   colonne3.innerHTML += "<button class=barer>Je passe mon tour </button>"; //ajout du contenu
 }
 
-function suivant() {}
+function suivant() {
+  console.log("code pour le btn au suivant");
+}
