@@ -1,30 +1,54 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin-top: -1%;
+  padding: 2%;
   text-align: center;
-  border: 5px dotted black;
+  border: 5px dashed black;
 }
 header {
-  background-color: rgb(233, 203, 35);
+  background-color: #ffb703;
   padding: 0.5%;
 }
 h2 {
-  background-color: lightblue;
+  background-color: #8ecae6;
   padding: 0.3%;
 }
 #flex {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 35%;
 }
 
 .bleu {
-  background-color: blue;
+  background-color: #023047;
+  border-radius: 2.5px;
+  border: none;
+  color: white;
+  padding: 0.5%;
+}
+input {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-table {
-  margin-right: 50%;
-}
+table,
+tr,
 th {
   border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 40%;
+  text-align: center;
+}
+
+td {
+  margin-left: 10%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.barer {
+  border: none;
+  background-color: #fb8500;
+  cursor: pointer;
+  border-radius: 2.5px;
 }

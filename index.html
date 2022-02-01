@@ -9,30 +9,28 @@
   </head>
   <body>
     <header>
-      <h1>distributeur de ticket pour la promo</h1>
+      <h1>Distributeur de ticket pour la promo</h1>
     </header>
-    <h2>ici c'est comme a la poisoonerie ill fau t faire la queue</h2>
+    <!--petit alien et petit poissons sont deux caractères qui s'incruste via copier/coller-->
+    <h2>👽Ici c'est comme a la poissonerie 🐠 il faut faire la queue</h2>
     <div id="flex">
-      <p>ton nom :</p>
-      <input type="text" name="" id="" />
-      <button class="bleu">je veux de laide</button>
+      <p>Ton nom :</p>
+      <input type="text" name="" id="recuper_nom" />
+      <button class="bleu" onclick="ajouterLigne();">Je veux de l'aide</button>
     </div>
-    <h2>Listes des apprenant.e.s</h2>
+    <h2>Liste des apprenant.e.s</h2>
     <div>
-      <button class="bleu">au suivant</button>
-      <button class="bleu">rafraichir la liste</button>
+      <button class="bleu">Au suivant</button>
+      <button class="bleu">Rafraichir la liste</button>
     </div>
-    <table>
+    <br />
+    <table id="tableau">
       <tr>
-        <th>nom</th>
-        <th>date</th>
-        <th>passer mon tour</th>
+        <th>Nom</th>
+        <th class="date">Date</th>
+        <th>Passer mon tour</th>
       </tr>
-      <!-- <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr> -->
     </table>
+    <script src="main.js"></script>
   </body>
 </html>
