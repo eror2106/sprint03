@@ -1,34 +1,38 @@
 let liste_utilisateur = [];
 
 function ajouterLigne() {
-  var nom = document.getElementById("recuper_nom").value;
+  var nom = document.getElementById("recuper_nom").value; //recupere le contenue de linput
   liste_utilisateur.push(nom);
-  var ligne = tableau.insertRow(-1); //on a ajouté une ligne
-  var colonne1 = ligne.insertCell(0); //on a une ajouté une cellule
-  colonne1.innerHTML += nom; //on y met le contenu de titre
-  var colonne2 = ligne.insertCell(1); //on repete loperation pour les 31 j
-  var d = new Date();
-  let day = addZero(d.getDate());
-  let month = addZero(d.getMonth());
-  let h = addZero(d.getHours());
-  let m = addZero(d.getMinutes());
-  let s = addZero(d.getSeconds());
+  var ligne = tableau.insertRow(-1); //ajout de la ligne du tableau
+  var colonne1 = ligne.insertCell(0); //ajout de la ligne du tableau//ajout de la ligne du tableau
+  colonne1.innerHTML += nom; //ajout de la variable dans la cellule
+  var colonne2 = ligne.insertCell(1); //ajout de la ligne du tableau
+  var d = new Date(); //instensiation de la date
+  let day = addZero(d.getDate()); //instensiation du jour
+  let month = addZero(d.getMonth() + 1); //instensiation du mois
+  let h = addZero(d.getHours()); //instensiation de l'heure
+  let m = addZero(d.getMinutes()); //instensiation des minute
+  let s = addZero(d.getSeconds()); //instensiation des seconde
   function addZero(i) {
     if (i < 10) {
       i = "0" + i;
     }
     return i;
   }
-  time = h + ":" + m + ":" + s;
-  var date = day + "/" + month + "/" + d.getFullYear() + ",   " + time;
-  colonne2.innerHTML += date; //ajout du contenu
-  var colonne3 = ligne.insertCell(2); //on repete loperation pour les 31 j
-  var bouton = document.createElement("button");
-  bouton.textContent += "Je passe mon tour";
-  colonne3.id = "dernier";
-  colonne3.innerHTML += "<button class=barer>Je passe mon tour </button>"; //ajout du contenu
+  time = h + ":" + m + ":" + s; //cree l'heure au format demander
+  var date = day + "/" + month + "/" + d.getFullYear() + ",   " + time; //cree la date au format demander
+  colonne2.innerHTML += date; //ajout de la variable dans la cellule
+  var colonne3 = ligne.insertCell(2); //ajout de la ligne du tableau
+  var element_crée = document.createElement("button"); //creation d'un element boutton
+  var endroit = document.createTextNode("Je passe mon tour "); //creation d'un noeude de texte
+  element_crée.className = "barer"; //ajout dune clase sur lelement crée
+  element_crée.appendChild(endroit); //ajout d'un enfant
+  colonne3.appendChild(element_crée); //ajout d'un enfant
+  element_crée.setAttribute("onclick", "suprim();");
 }
 
-function suivant() {
-  console.log("code pour le btn au suivant");
+function suprim() {
+  var ligne = document.querySelector(".barer");
+  ligne.className = "lol";
+  alert("woilla");
 }
