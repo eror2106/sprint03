@@ -79,7 +79,7 @@ function ajouterLigne() {
     indice_liste_utiliateur++;
   }
   //resset du champs txt
-  //document.getElementById("recuper_nom").value = "";
+  document.getElementById("recuper_nom").value = "";
 }
 function griser(textContent) {
   let idbouton = get_id_btn(textContent);
