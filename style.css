@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Roboto:ital,wght@0,100;0,300;0,500;1,300&display=swap%27");
+
 body {
   margin-top: -1% !important;
   padding: 2%;
   text-align: center;
   border: 5px dashed black;
   margin: 5%;
+  font-family: "IBMPlex Sans Thai Looped" + sans-serif;
 }
 header {
   background-color: #ffb703;
