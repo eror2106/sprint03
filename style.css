@@ -22,7 +22,18 @@ h2 {
   align-items: center;
   padding-left: 35%;
 }
-
+.img_normal {
+  width: 20px;
+  height: 20px;
+}
+.img_btn {
+  width: 15px;
+  height: 15px;
+}
+.img_titre {
+  width: 40px;
+  height: 40px;
+}
 .bleu {
   background-color: #023047;
   border-radius: 2.5px;
